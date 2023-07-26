@@ -2323,7 +2323,7 @@ option {
 .bg-overlay-red:after {
     content: "";
     position: absolute;
-    background-color: #b4842a;
+    background-color: #e80000;
     opacity: .6;
     width: 100%;
     height: 100%;
@@ -3632,7 +3632,6 @@ section {
 
 .header-section-two .navbar-collapse .main-menu li a {
     color: white;
-    text-align: center;
 }
 
 .header-section-two .navbar-collapse .main-menu li a::after {
@@ -4344,13 +4343,12 @@ section {
 }
 
 .inner-banner-section .section-logo-text span {
-    font-size: 199px;
+    font-size: 280px;
     font-family: "Kanit", sans-serif;
     font-weight: 700;
     color: transparent;
     -webkit-text-stroke: 1px rgba(255, 255, 255, 0.15);
     font-style: italic;
-    line-height: 50px;
 }
 
 @media only screen and (max-width: 1199px) {
@@ -4363,7 +4361,6 @@ section {
     font-size: 50px;
     font-weight: 700;
     font-style: italic;
-    margin-top: 23px;
 }
 
 @media only screen and (max-width: 991px) {
@@ -4373,7 +4370,7 @@ section {
 }
 
 .inner-banner-section .banner-content .title span {
-    color: #b4842a;
+    color: #e80000;
 }
 
 .breadcrumb-area {
