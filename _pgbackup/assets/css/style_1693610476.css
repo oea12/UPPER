@@ -4968,8 +4968,8 @@ div[class*="col"]:nth-of-type(4n + 4) .trainer-item:hover {
 
 .trainer-thumb .trainer-overlay {
     position: absolute;
-    top: 11px;
-    right: 9px;
+    top: 40px;
+    right: 45px;
     border-radius: 135px;
     transition: all 0.5s;
 }
@@ -5602,7 +5602,6 @@ div[class*="col"]:nth-of-type(4n + 4) .trainer-item:hover {
     padding: 15px;
     margin: 0px 0px 15px;
     width: 25%;
-    height: 420px;
 }
 
 @media only screen and (max-width: 991px) {
