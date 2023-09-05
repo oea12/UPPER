@@ -172,6 +172,7 @@ a:focus,
 a:hover {
     text-decoration: none;
     color: inherit;
+    padding-left: 36px;
 }
 
 blockquote {
@@ -1141,8 +1142,8 @@ blockquote .quote-icon {
 .pagination {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 60px;
-    margin-bottom: -8px;
+    margin-top: 9px;
+    margin-bottom: -5px;
 }
 
 .pagination .page-item {
@@ -5599,10 +5600,10 @@ div[class*="col"]:nth-of-type(4n + 4) .trainer-item:hover {
 }
 
 .grid-item {
-    padding: 15px;
-    margin: 0px 0px 15px;
+    margin: 0px;
     width: 25%;
     height: 420px;
+    padding: 26px;
 }
 
 @media only screen and (max-width: 991px) {
@@ -9077,7 +9078,6 @@ div[class*="col"]:nth-of-type(4n + 4) .choose-item::after {
 
 .gallery-filter-wrapper .grid-item {
     width: 33.33%;
-    padding: 10px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -9095,6 +9095,7 @@ div[class*="col"]:nth-of-type(4n + 4) .choose-item::after {
 .gallery-thumb {
     position: relative;
     overflow: hidden;
+    height: 400px;
 }
 
 .gallery-thumb::before {
@@ -9118,16 +9119,17 @@ div[class*="col"]:nth-of-type(4n + 4) .choose-item::after {
 }
 
 .gallery-thumb img {
+    padding: 10px;
     width: 100%;
 }
 
 .gallery-thumb .gallery-overlay {
     position: absolute;
-    width: 100%;
     bottom: -50%;
     left: 0;
-    padding: 30px;
+    padding: 0px 0px 0px 43px;
     transition: all 0.5s;
+    justify-content: center;
 }
 
 .gallery-thumb .gallery-overlay .gallery-content {
@@ -9136,7 +9138,7 @@ div[class*="col"]:nth-of-type(4n + 4) .choose-item::after {
     align-items: center;
     justify-content: space-between;
     margin-top: 169px;
-    padding-top: 49px;
+    padding: 13px;
 }
 
 .gallery-thumb .gallery-overlay .title {
