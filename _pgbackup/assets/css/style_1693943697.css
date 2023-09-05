@@ -5654,7 +5654,6 @@ div[class*="col"]:nth-of-type(4n + 4) .trainer-item:hover {
     align-items: center;
     justify-content: center;
     text-align: center;
-    border-width: 0px;
 }
 
 @media only screen and (max-width: 1199px) {
@@ -10541,8 +10540,4 @@ div[class*="col"]:nth-of-type(4n + 4) .choose-item::after {
     width: auto;
     max-height: 200px;
     min-height: 200px;
-}
-
-.client-content {
-    border-width: 0px;
 }

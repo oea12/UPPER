@@ -5646,15 +5646,11 @@ div[class*="col"]:nth-of-type(4n + 4) .trainer-item:hover {
 }
 
 .client-item {
-    padding: 70px;
+    padding: 0 30px 0px;
     position: relative;
-    border-radius: 53px;
+    border-radius: 10px;
     z-index: 2;
-    height: 291px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    border-width: 0px;
+    height: 160px;
 }
 
 @media only screen and (max-width: 1199px) {
@@ -10534,15 +10530,4 @@ div[class*="col"]:nth-of-type(4n + 4) .choose-item::after {
         opacity: 1;
         transform: scale(1);
     }
-}
-
-.newlogo {
-    height: auto !important;
-    width: auto;
-    max-height: 200px;
-    min-height: 200px;
-}
-
-.client-content {
-    border-width: 0px;
 }
