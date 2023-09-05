@@ -172,7 +172,6 @@ a:focus,
 a:hover {
     text-decoration: none;
     color: inherit;
-    padding-left: 36px;
 }
 
 blockquote {
