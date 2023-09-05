@@ -1555,17 +1555,17 @@ h4 a:hover {
 }
 
 .section-header .section-title {
-    margin-bottom: 0;
     position: relative;
     font-style: italic;
     font-weight: 700;
-    margin-top: -17px;
-    margin-right: -69px;
+    text-align: center;
+    margin: -17px -35px 0;
 }
 
 @media only screen and (max-width: 991px) {
     .section-header .section-title {
         margin-top: -7px;
+        margin-right: 0px;
     }
 }
 
@@ -2901,7 +2901,7 @@ section {
 }
 
 ::selection {
-    background-color: #e80000;
+    background-color: #b4842a;
     color: white;
 }
 
@@ -3094,9 +3094,9 @@ section {
     align-items: center;
     color: black;
     display: flex;
-    font-size: 17px;
     transition: all 0.5s;
     z-index: 10;
+    font-size: 21px;
 }
 
 .header-bottom-area .navbar-collapse .main-menu li a::after {
@@ -3106,7 +3106,7 @@ section {
     right: -22px;
     width: 2px;
     height: 12px;
-    background-color: #b4842a;
+    background-color: #e80000;
 }
 
 @media only screen and (max-width: 1199px) {
@@ -3127,8 +3127,8 @@ section {
     bottom: 0;
     left: 0;
     width: 0;
-    height: 1px;
-    background-color: #b4842a;
+    height: 3px;
+    background-color: #e80000;
     transition: all 0.5s;
 }
 
@@ -3137,7 +3137,7 @@ section {
 }
 
 .header-bottom-area .navbar-collapse .main-menu li a:hover {
-    color: #b4842a;
+    color: #e80000;
 }
 
 .header-bottom-area .navbar-collapse .main-menu li a:hover::before {
@@ -3534,7 +3534,7 @@ section {
 }
 
 .header-section-two .header-bottom-area .navbar-collapse .main-menu li a:hover {
-    color: #b4842a;
+    color: #e80000;
 }
 
 .header-section-two .header-bottom-area .navbar-collapse .main-menu li a:before {
@@ -4259,6 +4259,7 @@ section {
 .banner-slider {
     overflow: hidden;
     display: flex;
+    min-height: 725px;
 }
 
 .banner-slider .swiper-slide-active .banner-bg {
@@ -4942,7 +4943,7 @@ div[class*="col"]:nth-of-type(4n + 4) .trainer-item:hover {
 .trainer-thumb {
     position: relative;
     overflow: hidden;
-    border-radius: 135px;
+    border-radius: 10px;
 }
 
 .trainer-thumb img {
@@ -4958,8 +4959,8 @@ div[class*="col"]:nth-of-type(4n + 4) .trainer-item:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    border: 2px solid #e80000;
-    border-radius: 135px;
+    border: 1px solid #e80000;
+    border-radius: 10px;
     opacity: 0;
     visibility: hidden;
     transition: all 0.5s;
@@ -4967,8 +4968,8 @@ div[class*="col"]:nth-of-type(4n + 4) .trainer-item:hover {
 
 .trainer-thumb .trainer-overlay {
     position: absolute;
-    top: 40px;
-    right: 45px;
+    top: 11px;
+    right: 9px;
     border-radius: 135px;
     transition: all 0.5s;
 }
@@ -5235,7 +5236,7 @@ div[class*="col"]:nth-of-type(4n + 4) .trainer-item:hover {
 }
 
 .trainer-section--style .trainer-item:hover {
-    transform: translateY(-30px) !important;
+    transform: translateY(-15px) !important;
 }
 
 .trainer-section--style .trainer-content {
@@ -5520,10 +5521,8 @@ div[class*="col"]:nth-of-type(4n + 4) .trainer-item:hover {
 }
 
 .filter-btn-group {
-    width: 70%;
-    margin: 0 auto;
-    margin-bottom: 70px;
-    background-color: rgba(232, 0, 0, 0.1);
+    margin: 0 20px 70px;
+    background-color: rgba(180, 132, 42, 0.21);
     border-radius: 999px;
 }
 
@@ -5588,7 +5587,7 @@ div[class*="col"]:nth-of-type(4n + 4) .trainer-item:hover {
 .filter-btn-group input.active[type="button"],
 .filter-btn-group input.active[type="reset"],
 .filter-btn-group input.active[type="submit"] {
-    background-color: #e80000;
+    background-color: #b4842a;
     color: white;
 }
 
@@ -5601,8 +5600,9 @@ div[class*="col"]:nth-of-type(4n + 4) .trainer-item:hover {
 
 .grid-item {
     padding: 15px;
-    margin: 0;
+    margin: 0px 0px 15px;
     width: 25%;
+    height: 420px;
 }
 
 @media only screen and (max-width: 991px) {
@@ -5647,10 +5647,15 @@ div[class*="col"]:nth-of-type(4n + 4) .trainer-item:hover {
 }
 
 .client-item {
-    padding: 0 30px 30px 30px;
+    padding: 70px;
     position: relative;
-    border-radius: 10px;
+    border-radius: 53px;
     z-index: 2;
+    height: 291px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-width: 0px;
 }
 
 @media only screen and (max-width: 1199px) {
@@ -7746,7 +7751,7 @@ div[class*="col"]:nth-of-type(4n + 4) .trainer-item:hover {
 /* -------------------------------------------------
     [ ### service block ] */
 .service-section {
-    margin-top: -180px;
+    margin-top: -158px;
     position: relative;
     z-index: 9;
 }
@@ -8943,7 +8948,7 @@ div[class*="col"]:nth-of-type(4n + 4) .choose-item::after {
 }
 
 .gallery-filter-wrapper .filter-btn-group {
-    width: 41%;
+    display: inline-table;
 }
 
 @media only screen and (max-width: 1870px) {
@@ -10530,4 +10535,15 @@ div[class*="col"]:nth-of-type(4n + 4) .choose-item::after {
         opacity: 1;
         transform: scale(1);
     }
+}
+
+.newlogo {
+    height: auto !important;
+    width: auto;
+    max-height: 200px;
+    min-height: 200px;
+}
+
+.client-content {
+    border-width: 0px;
 }

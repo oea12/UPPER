@@ -4259,6 +4259,7 @@ section {
 .banner-slider {
     overflow: hidden;
     display: flex;
+    min-height: 725px;
 }
 
 .banner-slider .swiper-slide-active .banner-bg {
@@ -7750,7 +7751,7 @@ div[class*="col"]:nth-of-type(4n + 4) .trainer-item:hover {
 /* -------------------------------------------------
     [ ### service block ] */
 .service-section {
-    margin-top: -180px;
+    margin-top: -158px;
     position: relative;
     z-index: 9;
 }
