@@ -5599,10 +5599,10 @@ div[class*="col"]:nth-of-type(4n + 4) .trainer-item:hover {
 }
 
 .grid-item {
-    margin: 0px;
+    margin: 15px 0 0;
     width: 25%;
-    height: 420px;
-    padding: 26px;
+    height: 462px;
+    padding: 38px 26px 26px;
 }
 
 @media only screen and (max-width: 991px) {
