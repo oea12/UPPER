@@ -9135,6 +9135,8 @@ div[class*="col"]:nth-of-type(4n + 4) .choose-item::after {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    margin-top: 169px;
+    padding-top: 49px;
 }
 
 .gallery-thumb .gallery-overlay .title {
