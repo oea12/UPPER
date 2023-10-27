@@ -3930,6 +3930,9 @@ section {
 .banner-section .banner-content {
     position: relative;
     z-index: 9;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: -100px;
 }
 
 @media only screen and (max-width: 1490px) {
@@ -4156,6 +4159,7 @@ section {
 
 .banner-section-two .banner-content .sub-title {
     margin-bottom: 20px;
+    line-height: 29px;
 }
 
 .banner-section-two .banner-content .title {

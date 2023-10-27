@@ -77,17 +77,21 @@
                                     <ul class="navbar-nav main-menu ml-auto mr-auto"> 
                                         <li class="menu_has_children"> <a href="index.html">INICIO</a> 
                                         </li>                                         
-                                        <li><a href="about.html">QUIÉNES SOMOS</a>
+                                        <li>
+                                            <a href="about.html">QUIÉNES SOMOS</a>
                                         </li>
-                                        <li><a href="prensa.html">PRENSA</a>
+                                        <li>
+                                            <a href="prensa.html">PRENSA</a>
                                         </li>                                         
-                                        <li><a class="site-logo site-title d-none d-xl-block" href="index.html"><img src="assets/images/logo-2.svg" alt="site-logo" width="200" style="position: relative; top: -28px;"></a>
+                                        <li>
+                                            <a class="site-logo site-title d-none d-xl-block" href="index.html"><img src="assets/images/logo-2.svg" alt="site-logo" width="200" style="position: relative; top: -28px;"></a>
                                         </li>                                         
                                         <li class="menu_has_children"> <a href="gallery.html">GALERÍA</a> 
                                         </li>                                         
                                         <!--     <li class="menu_has_children"> <a href="blog-classic.html">BLOG</a>  
                                         </li>     -->                                         
-                                        <li><a href="footer">CONTACTO</a>
+                                        <li>
+                                            <a href="footer">CONTACTO</a>
                                         </li>                                         
                                     </ul>                                     
                                 </div>                                 
@@ -119,8 +123,7 @@
         <div class="breadcrumb-area"> 
             <nav aria-label="breadcrumb"> 
                 <ol class="breadcrumb"> 
-                    <li class="breadcrumb-item">
-                        <a href="index.html">Home</a>
+                    <li class="breadcrumb-item"><a href="index.html">Home</a>
                     </li>                     
                     <li class="breadcrumb-item active" aria-current="page">Pricing Plan</li>                     
                 </ol>                 
@@ -158,7 +161,8 @@
                                     <p>Somos apasionados visionarios que ven el potencial en cada deportista y trabajamos incansablemente para convertir esas habilidades en el impulso necesario para alcanzar tus metas más ambiciosas.</p> 
                                 </div>                                 
                                 <form class="subscribe-form"> 
-                                    <label class="subscribe-icon"><i class="las la-envelope"></i>
+                                    <label class="subscribe-icon">
+                                        <i class="las la-envelope"></i>
                                     </label>                                     
                                     <input type="text" class="form--control" placeholder="Email Address"> 
                                     <button type="submit" class="btn--base">Contáctame</button>                                     
@@ -168,7 +172,63 @@
                     </div>                     
                 </div>                 
             </div>             
-        </section>                  
+        </section>         
+        <section class="plan-section ptb-120"> 
+            <h1>Feed de instagram</h1>
+            <blockquote class="instagram-media" data-instgrm-permalink="URL_DE_LA_PUBLICACION" data-instgrm-version="13"></blockquote>
+            <script async src="https://platform.instagram.com/en_US/embeds.js"></script>
+            <h1>Noticias de MMA</h1>
+            <ul id="newsList"></ul>
+            <script>
+        // Función para mostrar noticias en la página
+        function showNews(newsData) {
+            const newsList = document.getElementById('newsList');
+
+            // Limpia la lista de noticias existente
+            newsList.innerHTML = '';
+
+            // Itera a través de los datos de las noticias y crea elementos de lista
+            newsData.articles.forEach(news => {
+                const listItem = document.createElement('li');
+                const newsImage = document.createElement('img');
+                newsImage.src = news.urlToImage;
+                newsImage.alt = 'Imagen de la noticia';
+                const newsLink = document.createElement('a');
+                newsLink.href = news.url;
+                newsLink.target = '_blank';
+                newsLink.textContent = news.title;
+                listItem.appendChild(newsImage);
+                listItem.appendChild(newsLink);
+                newsList.appendChild(listItem);
+            });
+
+            // Si no hay noticias que coincidan con los criterios de búsqueda, muestra un mensaje
+            if (newsData.articles.length === 0) {
+                const noNewsMessage = document.createElement('p');
+                noNewsMessage.textContent = 'No se encontraron noticias de MMA.';
+                newsList.appendChild(noNewsMessage);
+            }
+        }
+
+        // Llama a la API de NewsAPI.org para obtener noticias de MMA
+        function getNewsMMA() {
+            const apiKey = 'd561fddbd2544a9daab2e5c8a3a2f5bf'; // Reemplaza con tu clave de API de NewsAPI.org
+            const apiUrl = `https://newsapi.org/v2/top-headlines?q=MMA&apiKey=${apiKey}`;
+
+            // Realiza la solicitud HTTP para obtener las noticias
+            fetch(apiUrl)
+                .then(response => response.json())
+                .then(data => {
+                    // Muestra las noticias en la página
+                    showNews(data);
+                })
+                .catch(error => console.error('Error al obtener las noticias:', error));
+        }
+
+        // Llama a la función para obtener y mostrar las noticias de MMA
+        getNewsMMA();
+    </script>
+        </section>         
         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     End Plan
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->         
@@ -187,13 +247,17 @@
                             </div>                             
                             <p>Somos la combinación perfecta entre astucia, elegancia y estrategia en el mundo del talento deportivo. Nuestra misión es forjar caminos y convertir el potencial en éxito, llevándote siempre un paso más arriba.</p> 
                             <ul class="footer-social"> 
-                                <li><a href="#0"><i class="fab fa-facebook-f"></i></a>
+                                <li>
+                                    <a href="#0"><i class="fab fa-facebook-f"></i></a>
                                 </li>                                 
-                                <li><a href="#0"><i class="fab fa-twitter"></i></a>
+                                <li>
+                                    <a href="#0"><i class="fab fa-twitter"></i></a>
                                 </li>                                 
-                                <li><a href="#0"><i class="fab fa-google-plus-g"></i></a>
+                                <li>
+                                    <a href="#0"><i class="fab fa-google-plus-g"></i></a>
                                 </li>                                 
-                                <li><a href="#0"><i class="fab fa-instagram"></i></a>
+                                <li>
+                                    <a href="#0"><i class="fab fa-instagram"></i></a>
                                 </li>                                 
                             </ul>                             
                         </div>                         
@@ -204,9 +268,11 @@
                         <div class="footer-widget"> 
                             <h4 class="title">Contact us</h4> 
                             <ul class="footer-list"> 
-                                <li><span>Email :</span> example@email.com
+                                <li>
+                                    <span>Email :</span> example@email.com
                                 </li>                                 
-                                <li><span>Telephone :</span> +1 (800)-123-4567
+                                <li>
+                                    <span>Telephone :</span> +1 (800)-123-4567
                                 </li>                                 
                             </ul>                             
                         </div>                         
