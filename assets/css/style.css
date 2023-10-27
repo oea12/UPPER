@@ -10554,7 +10554,6 @@ div[class*="col"]:nth-of-type(4n + 4) .choose-item::after {
 
 @media (max-width:991px) {
     .banner-slider {
-        min-height: 253vw;
     }
 
     .swiper-slide {
