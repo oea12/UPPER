@@ -113,21 +113,12 @@
                 <div class="row justify-content-center align-items-end mb-30-none"> 
                     <div class="col-xl-12 col-lg-12 text-center mb-30"> 
                         <div class="banner-content" data-aos="fade-up" data-aos-duration="1800"> 
-                            <h1 class="title">MASTER <span>SINGLE</span></h1> 
+                            <h1 class="title">Nuestros <span>peleadores</span></h1> 
                         </div>                         
                     </div>                     
                 </div>                 
             </div>             
         </section>         
-        <div class="breadcrumb-area"> 
-            <nav aria-label="breadcrumb"> 
-                <ol class="breadcrumb"> 
-                    <li class="breadcrumb-item"><a href="index.html">Home</a>
-                    </li>                     
-                    <li class="breadcrumb-item active" aria-current="page">Master Single</li>                     
-                </ol>                 
-            </nav>             
-        </div>         
         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     End Banner
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->         
@@ -141,6 +132,21 @@
         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     Start Trainer
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->         
+        <script>
+function loadFighter(id) {
+    // Hacer una solicitud GET al servidor Flask
+    $.get(`http://127.0.0.1:5000/fighter/${id}`, function(data) {
+        // `data` debería contener los datos del peleador que has retornado desde el servidor Flask
+
+        // Aquí puedes actualizar tu HTML con los datos del peleador
+        // Por ejemplo:
+        $(".title").text(data['Name']);  // Actualiza el nombre del peleador
+        $(".sub-title").text(data['Nickname']);  // Actualiza el apodo
+        // Puedes añadir más campos aquí...
+    });
+
+}
+</script>
         <section class="trainer-section trainer-details-section ptb-120"> 
             <div class="trainer-details-element-one my-paroller" data-paroller-factor="0.2" data-paroller-type="foreground" data-paroller-direction="vertical"> 
                 <img src="assets/images/element/element-1.png" alt="element"> 
@@ -152,100 +158,33 @@
                 <div class="row justify-content-center align-items-center mb-30-none"> 
                     <div class="col-xl-6 col-lg-6 mb-30"> 
                         <div class="about-thumb"> 
-                            <img src="assets/images/Andrea.png" alt="about"> 
+                            <img src="assets/images/Group 14662.png" alt="about"> 
                         </div>                         
                     </div>                     
                     <div class="col-xl-6 col-lg-6 mb-30"> 
                         <div class="trainer-about-content-area"> 
                             <div class="trainer-about-header"> 
-                                <h2 class="title">Andrea Vazquez</h2> <span class="sub-title">Strawweight</span> 
-                                <div class="ratings"> <span><i class="fas fa-star"></i> PRO MMA RECORD 4-2-0</span> 
+                                <h2 class="title">Name of the fighter</h2> <span class="sub-title">Type</span> 
+                                <div class="ratings"> <span><i class="fas fa-star"></i> 4.50 (09)</span> 
                                 </div>                                 
                             </div>                             
                             <div class="trainer-about-body"> 
-                                <p>Andrea Vázquez is the 24th ranked of 572 active Latin America women (pound for pound). <br> <br> Andrea Vázquez is the 11th ranked of 234 active Mexico women (pound for pound).</p> 
+                                <p>There were twelve rules in all, and they specified that fights should be "a fair stand-up boxing match" in a 24-foot-square or similar ring. Rounds were three minutes with one-minute rest intervals between rounds. Each fighter was given a ten-second count if he was knocked down, and wrestling was banned. The introduction of gloves of "fair-size" also changed the nature of the bouts. An average pair of boxing gloves resembles a bloated pair of mittens and are laced up around the wrists.</p> 
                             </div>                             
                             <div class="trainer-about-footer"> 
                                 <ul class="trainer-about-list"> 
 </ul>                                 
                                 <div class="trainer-about-social-area"> 
-</div>                                 
-                            </div>                             
-                        </div>                         
-                    </div>                     
-                </div>                 
-                <div class="skill-widget-area"> 
-                    <h3 class="widget-title">BEST SKILLS</h3> 
-                    <div class="row justify-content-center mb-30-none"> 
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 mb-30"> 
-                            <div class="choose-item"> 
-                                <div class="chart" data-percent="25"><span>25%</span>
-                                </div>                                 
-                                <h4 class="title">KO/TKO</h4> 
-                            </div>                             
-                        </div>                         
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 mb-30"> 
-                            <div class="choose-item"> 
-                                <div class="chart" data-percent="25"><span>25% </span>
-                                </div>                                 
-                                <h4 class="title">Submission</h4> 
-                            </div>                             
-                        </div>                         
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 mb-30"> 
-                            <div class="choose-item"> 
-                                <div class="chart" data-percent="50"><span>50%</span>
-                                </div>                                 
-                                <h4 class="title">Decision</h4> 
-                            </div>                             
-                        </div>                         
-                    </div>                     
-                </div>                 
-                <div class="experience-widget-area"> 
-                    <h3 class="widget-title">EXPERIENCE</h3> 
-                    <div class="statistics-area"> 
-                        <div class="row justify-content-center mt-20-none mb-30-none"> 
-                            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 mb-30"> 
-                                <div class="statistics-item"> 
-                                    <div class="statistics-content"> 
-                                        <div class="odo-area"> 
-                                            <h3 class="odo-title odometer" data-odometer-final="2000">0</h3> 
-                                            <h3 class="title">+</h3> 
-                                        </div>                                         
-                                        <p>Number of Students</p> 
-                                    </div>                                     
-                                </div>                                 
-                            </div>                             
-                            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 mb-30"> 
-                                <div class="statistics-item"> 
-                                    <div class="statistics-content"> 
-                                        <div class="odo-area"> 
-                                            <h3 class="odo-title odometer" data-odometer-final="3">0</h3> 
-                                            <h3 class="title">+</h3> 
-                                        </div>                                         
-                                        <p>Number of Training</p> 
-                                    </div>                                     
-                                </div>                                 
-                            </div>                             
-                            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 mb-30"> 
-                                <div class="statistics-item"> 
-                                    <div class="statistics-content"> 
-                                        <div class="odo-area"> 
-                                            <h3 class="odo-title odometer" data-odometer-final="1764">0</h3> 
-                                            <h3 class="title">+</h3> 
-                                        </div>                                         
-                                        <p>Total Student Reviews</p> 
-                                    </div>                                     
-                                </div>                                 
-                            </div>                             
-                            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 mb-30"> 
-                                <div class="statistics-item"> 
-                                    <div class="statistics-content"> 
-                                        <div class="odo-area"> 
-                                            <h3 class="odo-title odometer" data-odometer-final="5">0</h3> 
-                                            <h3 class="title">+</h3> 
-                                        </div>                                         
-                                        <p>Years of Experience</p> 
-                                    </div>                                     
+                                    <ul class="trainer-about-social"> 
+                                        <li>
+</li>                                         
+                                        <li><a href="#0"><i class="fab fa-twitter"></i></a>
+                                        </li>                                         
+                                        <li>
+</li>                                         
+                                        <li><a href="#0"><i class="fab fa-instagram"></i></a>
+                                        </li>                                         
+                                    </ul>                                     
                                 </div>                                 
                             </div>                             
                         </div>                         
@@ -464,6 +403,7 @@
     End Footer
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->         
         <!-- jquery -->         
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="assets/js/jquery.js"></script>         
         <!-- bootstrap js -->         
         <script src="assets/js/bootstrap.min.js"></script>         

@@ -5892,7 +5892,6 @@ div[class*="col"]:nth-of-type(4n + 4) .trainer-item:hover {
 @media only screen and (max-width: 1199px) {
     .about-section .section-header .section-title {
         font-size: 40px;
-        color: #ffffff;
     }
 }
 
@@ -6071,8 +6070,6 @@ div[class*="col"]:nth-of-type(4n + 4) .trainer-item:hover {
 
 .about-section--style {
     position: relative;
-    background-image: url('../Back.png');
-    background-attachment: fixed;
 }
 
 .about-section--style .about-element-one {
@@ -6186,8 +6183,7 @@ div[class*="col"]:nth-of-type(4n + 4) .trainer-item:hover {
 }
 
 .about-section--style .section-header p {
-    padding: 9px;
-    color: #ffffff;
+    padding: 0;
 }
 
 .about-section--style .about-list li {
@@ -6195,7 +6191,6 @@ div[class*="col"]:nth-of-type(4n + 4) .trainer-item:hover {
     padding-bottom: 20px;
     position: relative;
     padding-left: 30px;
-    color: #ffffff;
 }
 
 .about-section--style .about-list li::before {
