@@ -504,7 +504,7 @@ mark {
 .img-thumbnail {
     padding: .25rem;
     border-radius: .25rem;
-    max-width: 48%;
+    max-width: 80%;
     height: auto;
     margin-top: 31px;
 }

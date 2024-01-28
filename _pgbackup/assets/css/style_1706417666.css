@@ -4945,7 +4945,6 @@ div[class*="col"]:nth-of-type(4n + 4) .trainer-item:hover {
     position: relative;
     overflow: hidden;
     border-radius: 10px;
-    padding-bottom: 10px;
 }
 
 .trainer-thumb img {
@@ -5595,7 +5594,7 @@ div[class*="col"]:nth-of-type(4n + 4) .trainer-item:hover {
 
 .grid:after {
     content: '';
-    display: grid;
+    display: block;
     clear: both;
     margin: -15px;
 }
@@ -10569,6 +10568,4 @@ div[class*="col"]:nth-of-type(4n + 4) .choose-item::after {
 }
 
 .grid {
-    text-align: center !important;
-    justify-content: center !important;
 }
