@@ -1141,8 +1141,8 @@ blockquote .quote-icon {
 .pagination {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 60px;
-    margin-bottom: -8px;
+    margin-top: 9px;
+    margin-bottom: -5px;
 }
 
 .pagination .page-item {
@@ -1441,7 +1441,7 @@ h1 {
 
 @media only screen and (max-width: 991px) {
     h1 {
-        font-size: 40px;
+        font-size: 2rem;
     }
 }
 
@@ -1558,14 +1558,15 @@ h4 a:hover {
     position: relative;
     font-style: italic;
     font-weight: 700;
-    text-align: center;
+    text-align: left;
     margin: -17px -35px 0;
 }
 
 @media only screen and (max-width: 991px) {
     .section-header .section-title {
-        margin-top: -7px;
-        margin-right: 0px;
+        padding: 0px;
+        margin: -7px;
+        text-align: center;
     }
 }
 
@@ -3096,7 +3097,7 @@ section {
     display: flex;
     transition: all 0.5s;
     z-index: 10;
-    font-size: 21px;
+    font-size: 17px;
 }
 
 .header-bottom-area .navbar-collapse .main-menu li a::after {
@@ -3302,7 +3303,7 @@ section {
 
 @media only screen and (max-width: 991px) {
     .site-logo {
-        max-width: 150px;
+        max-width: 20vh;
         margin-right: 0;
     }
 }
@@ -3714,8 +3715,6 @@ section {
 -------------------------------------------------------------- */
 .banner-section {
     position: relative;
-    padding-top: 234px;
-    padding-bottom: 190px;
     padding-left: 200px;
     padding-right: 200px;
     background-color: white;
@@ -3746,8 +3745,6 @@ section {
 
 @media only screen and (max-width: 1340px) {
     .banner-section {
-        padding-top: 165px;
-        padding-bottom: 90px;
         padding-left: 30px;
         padding-right: 30px;
     }
@@ -3762,8 +3759,6 @@ section {
 
 @media only screen and (max-width: 575px) {
     .banner-section {
-        padding-top: 130px;
-        padding-bottom: 95px;
     }
 }
 
@@ -3930,6 +3925,8 @@ section {
 .banner-section .banner-content {
     position: relative;
     z-index: 9;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
 @media only screen and (max-width: 1490px) {
@@ -3961,7 +3958,7 @@ section {
 
 @media only screen and (max-width: 991px) {
     .banner-section .banner-content .sub-title {
-        font-size: 16px;
+        font-size: 1rem;
     }
 }
 
@@ -3996,8 +3993,11 @@ section {
 
 @media only screen and (max-width: 991px) {
     .banner-section .banner-content .inner-title {
-        font-size: 22px;
+        font-size: 1vw;
         margin-bottom: 15px;
+        text-transform: none;
+        word-break: normal;
+        text-align: center;
     }
 }
 
@@ -4130,8 +4130,8 @@ section {
 }
 
 .banner-section-two {
-    padding-top: 264px;
-    padding-bottom: 289px;
+    padding-top: 25vh;
+    padding-bottom: 20vh;
 }
 
 .banner-section-two .banner-bg {
@@ -4156,6 +4156,7 @@ section {
 
 .banner-section-two .banner-content .sub-title {
     margin-bottom: 20px;
+    line-height: 29px;
 }
 
 .banner-section-two .banner-content .title {
@@ -4783,7 +4784,7 @@ section {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     margin: -5px;
 }
 
@@ -4944,6 +4945,7 @@ div[class*="col"]:nth-of-type(4n + 4) .trainer-item:hover {
     position: relative;
     overflow: hidden;
     border-radius: 10px;
+    padding-bottom: 10px;
 }
 
 .trainer-thumb img {
@@ -5593,27 +5595,30 @@ div[class*="col"]:nth-of-type(4n + 4) .trainer-item:hover {
 
 .grid:after {
     content: '';
-    display: block;
+    display: grid;
     clear: both;
     margin: -15px;
 }
 
 .grid-item {
-    padding: 15px;
-    margin: 0px 0px 15px;
+    margin: 15px 0 0;
     width: 25%;
-    height: 420px;
+    height: 462px;
+    padding: 38px 26px 26px;
 }
 
 @media only screen and (max-width: 991px) {
     .grid-item {
         width: 50%;
+        height: auto;
     }
 }
 
 @media only screen and (max-width: 425px) {
     .grid-item {
         width: 100%;
+        padding: 42.5px;
+        height: auto;
     }
 }
 
@@ -5891,6 +5896,7 @@ div[class*="col"]:nth-of-type(4n + 4) .trainer-item:hover {
 @media only screen and (max-width: 1199px) {
     .about-section .section-header .section-title {
         font-size: 40px;
+        color: #ffffff;
     }
 }
 
@@ -6069,6 +6075,8 @@ div[class*="col"]:nth-of-type(4n + 4) .trainer-item:hover {
 
 .about-section--style {
     position: relative;
+    background-image: url('../Back.png');
+    background-attachment: fixed;
 }
 
 .about-section--style .about-element-one {
@@ -6182,7 +6190,8 @@ div[class*="col"]:nth-of-type(4n + 4) .trainer-item:hover {
 }
 
 .about-section--style .section-header p {
-    padding: 0;
+    padding: 9px;
+    color: #ffffff;
 }
 
 .about-section--style .about-list li {
@@ -6190,6 +6199,7 @@ div[class*="col"]:nth-of-type(4n + 4) .trainer-item:hover {
     padding-bottom: 20px;
     position: relative;
     padding-left: 30px;
+    color: #ffffff;
 }
 
 .about-section--style .about-list li::before {
@@ -9077,7 +9087,6 @@ div[class*="col"]:nth-of-type(4n + 4) .choose-item::after {
 
 .gallery-filter-wrapper .grid-item {
     width: 33.33%;
-    padding: 10px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -9095,6 +9104,7 @@ div[class*="col"]:nth-of-type(4n + 4) .choose-item::after {
 .gallery-thumb {
     position: relative;
     overflow: hidden;
+    height: 400px;
 }
 
 .gallery-thumb::before {
@@ -9118,16 +9128,17 @@ div[class*="col"]:nth-of-type(4n + 4) .choose-item::after {
 }
 
 .gallery-thumb img {
+    padding: 10px;
     width: 100%;
 }
 
 .gallery-thumb .gallery-overlay {
     position: absolute;
-    width: 100%;
     bottom: -50%;
     left: 0;
-    padding: 30px;
+    padding: 0px 0px 0px 43px;
     transition: all 0.5s;
+    justify-content: center;
 }
 
 .gallery-thumb .gallery-overlay .gallery-content {
@@ -9135,6 +9146,8 @@ div[class*="col"]:nth-of-type(4n + 4) .choose-item::after {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    margin-top: 169px;
+    padding: 13px;
 }
 
 .gallery-thumb .gallery-overlay .title {
@@ -10546,4 +10559,18 @@ div[class*="col"]:nth-of-type(4n + 4) .choose-item::after {
 
 .client-content {
     border-width: 0px;
+}
+
+@media (max-width:991px) {
+    .banner-slider {
+    }
+
+    .swiper-slide {
+        height: 100%;
+    }
+}
+
+.grid {
+    text-align: center !important;
+    justify-content: center !important;
 }
