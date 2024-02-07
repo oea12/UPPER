@@ -4942,23 +4942,33 @@ div[class*="col"]:nth-of-type(4n + 4) .trainer-item:hover {
 }
 
 .trainer-thumb {
+    height: auto;
+
+    /* Esto permitirá que el contenedor se ajuste a la altura natural de la imagen */
+    padding-bottom: 10px;
+
+    /* Ajusta el padding como se desee, pero no afectará el tamaño de la imagen */
     position: relative;
     overflow: hidden;
     border-radius: 10px;
-    padding: 0;
-
-    /* Ajustado para eliminar el padding y evitar distorsiones */
-    object-fit: cover;
-
-    /* Asegura que la imagen cubra el área sin deformarse */
 }
 
 .trainer-thumb img {
-    overflow: hidden;
-    transition: all 0.5s;
-    height: 100%;
+    width: 100%;
+
+    /* Establece el ancho de la imagen al 100% del contenedor */
+    height: auto;
+
+    /* Permite que la altura se ajuste automáticamente */
+    object-fit: cover;
+
+    /* Cubre el área del contenedor sin estirar la imagen */
+    padding: 0;
+
+    /* Elimina el padding para evitar distorsiones */
     border-radius: 27px;
-    padding: 10px;
+
+    /* Si deseas mantener el border-radius */
 }
 
 .trainer-thumb::before {
