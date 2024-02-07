@@ -4945,7 +4945,12 @@ div[class*="col"]:nth-of-type(4n + 4) .trainer-item:hover {
     position: relative;
     overflow: hidden;
     border-radius: 10px;
-    padding-bottom: 10px;
+    padding: 0;
+
+    /* Ajustado para eliminar el padding y evitar distorsiones */
+    object-fit: cover;
+
+    /* Asegura que la imagen cubra el área sin deformarse */
 }
 
 .trainer-thumb img {
