@@ -5600,6 +5600,7 @@ div[class*="col"]:nth-of-type(4n + 4) .trainer-item:hover {
 }
 
 .grid-item {
+    box-sizing: border-box;
     margin: 15px 0 0;
     width: 25%;
     height: 462px;
@@ -10587,11 +10588,16 @@ div[class*="col"]:nth-of-type(4n + 4) .choose-item::after {
 }
 
 @media (max-width:629px) {
-    .share-area {
-    }
 }
 
 @media (max-width:909px) {
     .trainer-thumb .trainer-overlay {
+    }
+
+    .trainer-thumb .trainer-overlay .social-list li a {
+    }
+
+    .trainer-thumb .trainer-overlay .share-icon {
+        background-color: rgba(0, 0, 0, 0);
     }
 }
