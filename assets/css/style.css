@@ -4953,6 +4953,7 @@ div[class*="col"]:nth-of-type(4n + 4) .trainer-item:hover {
     transition: all 0.5s;
     height: 100%;
     border-radius: 27px;
+    padding: 10px;
 }
 
 .trainer-thumb::before {
@@ -5604,7 +5605,7 @@ div[class*="col"]:nth-of-type(4n + 4) .trainer-item:hover {
     margin: 15px 0 0;
     width: 25%;
     height: 462px;
-    padding: 38px 26px 26px;
+    padding: 6px;
 }
 
 @media only screen and (max-width: 991px) {
