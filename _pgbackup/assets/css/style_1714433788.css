@@ -1558,7 +1558,7 @@ h4 a:hover {
     position: relative;
     font-style: italic;
     font-weight: 700;
-    text-align: left;
+    text-align: center;
     margin: -17px -35px 0;
 }
 
@@ -3097,7 +3097,7 @@ section {
     display: flex;
     transition: all 0.5s;
     z-index: 10;
-    font-size: 21px;
+    font-size: 17px;
 }
 
 .header-bottom-area .navbar-collapse .main-menu li a::after {
@@ -4942,6 +4942,12 @@ div[class*="col"]:nth-of-type(4n + 4) .trainer-item:hover {
 }
 
 .trainer-thumb {
+    height: auto;
+
+    /* Esto permitirá que el contenedor se ajuste a la altura natural de la imagen */
+    padding-bottom: 10px;
+
+    /* Ajusta el padding como se desee, pero no afectará el tamaño de la imagen */
     position: relative;
     overflow: hidden;
     border-radius: 10px;
@@ -4949,8 +4955,20 @@ div[class*="col"]:nth-of-type(4n + 4) .trainer-item:hover {
 
 .trainer-thumb img {
     width: 100%;
-    overflow: hidden;
-    transition: all 0.5s;
+
+    /* Establece el ancho de la imagen al 100% del contenedor */
+    height: auto;
+
+    /* Permite que la altura se ajuste automáticamente */
+    object-fit: cover;
+
+    /* Cubre el área del contenedor sin estirar la imagen */
+    padding: 0;
+
+    /* Elimina el padding para evitar distorsiones */
+    border-radius: 27px;
+
+    /* Si deseas mantener el border-radius */
 }
 
 .trainer-thumb::before {
@@ -4958,8 +4976,6 @@ div[class*="col"]:nth-of-type(4n + 4) .trainer-item:hover {
     content: '';
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
     border: 1px solid #e80000;
     border-radius: 10px;
     opacity: 0;
@@ -5004,7 +5020,6 @@ div[class*="col"]:nth-of-type(4n + 4) .trainer-item:hover {
 
 .trainer-thumb .trainer-overlay .social-list li a {
     width: 40px;
-    height: 40px;
     line-height: 40px;
     display: inline-block;
     text-align: center;
@@ -5012,6 +5027,7 @@ div[class*="col"]:nth-of-type(4n + 4) .trainer-item:hover {
     color: #e80000;
     border-radius: 50%;
     transition: all 0.3s;
+    height: 40px;
 }
 
 .trainer-thumb .trainer-overlay .social-list li a:hover {
@@ -5594,27 +5610,31 @@ div[class*="col"]:nth-of-type(4n + 4) .trainer-item:hover {
 
 .grid:after {
     content: '';
-    display: block;
+    display: grid;
     clear: both;
     margin: -15px;
 }
 
 .grid-item {
+    box-sizing: border-box;
     margin: 15px 0 0;
     width: 25%;
     height: 462px;
-    padding: 38px 26px 26px;
+    padding: 6px;
 }
 
 @media only screen and (max-width: 991px) {
     .grid-item {
         width: 50%;
+        height: auto;
     }
 }
 
 @media only screen and (max-width: 425px) {
     .grid-item {
-        width: 100%;
+        width: 50%;
+        padding: 42.5px;
+        height: auto;
     }
 }
 
@@ -5892,6 +5912,7 @@ div[class*="col"]:nth-of-type(4n + 4) .trainer-item:hover {
 @media only screen and (max-width: 1199px) {
     .about-section .section-header .section-title {
         font-size: 40px;
+        color: #ffffff;
     }
 }
 
@@ -6070,6 +6091,8 @@ div[class*="col"]:nth-of-type(4n + 4) .trainer-item:hover {
 
 .about-section--style {
     position: relative;
+    background-image: url('../Back.png');
+    background-attachment: fixed;
 }
 
 .about-section--style .about-element-one {
@@ -6183,7 +6206,8 @@ div[class*="col"]:nth-of-type(4n + 4) .trainer-item:hover {
 }
 
 .about-section--style .section-header p {
-    padding: 0;
+    padding: 9px;
+    color: #ffffff;
 }
 
 .about-section--style .about-list li {
@@ -6191,6 +6215,7 @@ div[class*="col"]:nth-of-type(4n + 4) .trainer-item:hover {
     padding-bottom: 20px;
     position: relative;
     padding-left: 30px;
+    color: #ffffff;
 }
 
 .about-section--style .about-list li::before {
@@ -9077,7 +9102,8 @@ div[class*="col"]:nth-of-type(4n + 4) .choose-item::after {
 }
 
 .gallery-filter-wrapper .grid-item {
-    width: 33.33%;
+    width: 20%;
+    height: auto !important;
 }
 
 @media only screen and (max-width: 767px) {
@@ -9095,7 +9121,6 @@ div[class*="col"]:nth-of-type(4n + 4) .choose-item::after {
 .gallery-thumb {
     position: relative;
     overflow: hidden;
-    height: 400px;
 }
 
 .gallery-thumb::before {
@@ -9120,7 +9145,6 @@ div[class*="col"]:nth-of-type(4n + 4) .choose-item::after {
 
 .gallery-thumb img {
     padding: 10px;
-    width: 100%;
 }
 
 .gallery-thumb .gallery-overlay {
@@ -9130,6 +9154,7 @@ div[class*="col"]:nth-of-type(4n + 4) .choose-item::after {
     padding: 0px 0px 0px 43px;
     transition: all 0.5s;
     justify-content: center;
+    max-width: 100%;
 }
 
 .gallery-thumb .gallery-overlay .gallery-content {
@@ -10554,10 +10579,41 @@ div[class*="col"]:nth-of-type(4n + 4) .choose-item::after {
 
 @media (max-width:991px) {
     .banner-slider {
-        min-height: 253vw;
     }
 
     .swiper-slide {
         height: 100%;
+    }
+}
+
+.grid {
+    text-align: center !important;
+    justify-content: center !important;
+}
+
+@media (max-width:909px) {
+}
+
+@media (max-width:699px) {
+}
+
+@media (max-width:529px) {
+}
+
+.share-area {
+}
+
+@media (max-width:629px) {
+}
+
+@media (max-width:909px) {
+    .trainer-thumb .trainer-overlay {
+    }
+
+    .trainer-thumb .trainer-overlay .social-list li a {
+    }
+
+    .trainer-thumb .trainer-overlay .share-icon {
+        background-color: rgba(0, 0, 0, 0);
     }
 }
