@@ -4920,6 +4920,7 @@ div[class*="col"]:nth-of-type(4n + 4) .trainer-item:hover {
 
 .trainer-item {
     transition: all 0.5s;
+    padding-bottom: 18px;
 }
 
 .trainer-item:hover {
@@ -5617,10 +5618,10 @@ div[class*="col"]:nth-of-type(4n + 4) .trainer-item:hover {
 
 .grid-item {
     box-sizing: border-box;
-    margin: 15px 0 0;
     width: 25%;
-    height: 462px;
-    padding: 6px;
+    height: 499px;
+    padding: 14px;
+    margin-top: 15px;
 }
 
 @media only screen and (max-width: 991px) {
