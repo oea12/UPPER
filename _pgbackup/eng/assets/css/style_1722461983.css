@@ -5052,7 +5052,6 @@ div[class*="col"]:nth-of-type(4n + 4) .trainer-item:hover {
 
 .trainer-content .title a {
     transition: all 0.5s;
-    color: #000000;
 }
 
 .trainer-content .title a:hover {
@@ -5060,7 +5059,7 @@ div[class*="col"]:nth-of-type(4n + 4) .trainer-item:hover {
 }
 
 .trainer-content .sub-title {
-    color: #000000;
+    color: white;
 }
 
 .trainer-slider {
@@ -7227,7 +7226,6 @@ div[class*="col"]:nth-of-type(4n + 4) .trainer-item:hover {
     [ ### call-to-action block ] */
 .call-to-action-section {
     background-attachment: fixed;
-    margin-top: -20px;
 }
 
 .call-to-action-content .title {
@@ -10572,8 +10570,6 @@ div[class*="col"]:nth-of-type(4n + 4) .choose-item::after {
 }
 
 .grid {
-    padding-bottom: 0px;
-    margin-bottom: 19px;
 }
 
 .invert-colors {
