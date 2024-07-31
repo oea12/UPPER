@@ -3148,7 +3148,7 @@ section {
 @media (max-width: 1199px) {
     .header-bottom-area .navbar-collapse .main-menu li a {
         color: white;
-        padding: 0px 15px 12px !important;
+        padding: 12px 15px !important;
         display: block;
         width: 100%;
     }
